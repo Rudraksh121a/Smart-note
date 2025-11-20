@@ -19,6 +19,7 @@ class SignupView(CreateView):
 
 class LogoutInterfaceView(LogoutView):
     template_name = 'home/logout.html'
+    next_page = '/'  # Redirect to home page after logout
 
 class LoginInterfaceView(LoginView):
     template_name = 'home/login.html'
